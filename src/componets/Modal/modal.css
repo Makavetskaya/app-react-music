@@ -1,0 +1,104 @@
+@keyframes showBackdrop {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+  animation: showBackdrop 0.3s ease-out;
+}
+
+.modal {
+  display: flex;
+  background-color: #081730;
+  width: 500px;
+  height: 600px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.144);
+  border-radius: 10px;
+  transition: all 0.3s;
+  animation: showModal 0.3s ease-out;
+}
+.modal__body-singin {
+  height: 50%;
+}
+.modal-body {
+  /* padding: 10px 20px; */
+}
+
+.backdrop-hide {
+  opacity: 0;
+}
+
+.backdrop-hide .modal {
+  opacity: 0;
+  transform: translateY(-500px);
+}
+
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.041);
+  transition: all 0.3s;
+  animation: showBackdrop 0.3s ease-out;
+}
+.backdrop-hide {
+  opacity: 0;
+} */
+
+/* .backdrop-hide .modal {
+  opacity: 0;
+  transform: translateY(-500px);
+} */
+
+/* .modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+} */
+
+/* .modal.active {
+  opacity: 1;
+  pointer-events: all;
+} */

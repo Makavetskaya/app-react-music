@@ -1,0 +1,11 @@
+.download {
+  display: flex;
+}
+
+.images {
+  border: 2px solid #232a4e;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 13px;
+  margin-right: 2rem;
+}

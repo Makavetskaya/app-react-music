@@ -1,0 +1,39 @@
+.header {
+  background: #081730;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 5rem;
+  font-size: 0.8rem;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+}
+
+.buttons {
+  display: flex;
+}
+.buttonStyleone {
+  border: 2px solid #404c8a;
+  background: #081730;
+  border-radius: 10px;
+  padding: 7px 25px;
+  color: #fff;
+  margin-right: 35px;
+}
+.buttonStyle {
+  border: 2px solid #404c8a;
+  background: #081730;
+  border-radius: 10px;
+  padding: 7px 25px;
+  color: #fff;
+}
+
+.buttonStyle:hover {
+  background: #404c8a;
+}
+.buttonStyleone:hover {
+  background: #404c8a;
+}
