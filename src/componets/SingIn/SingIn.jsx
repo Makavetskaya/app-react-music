@@ -1,7 +1,7 @@
 import React from 'react';
 import './singIn.css';
 import { useForm } from 'react-hook-form';
-// import { Form } from '../Form/Form';
+import { Form } from '../Form/Form';
 // import { useNavigate } from 'react-router-dom';
 // import { setUser } from '../../store/slices/userSlice';
 // import { useAppDispatch } from '../../hooks/redux-hooks';
@@ -12,7 +12,7 @@ const SingIn = () => {
     formState: { errors, isValid },
     handleSubmit,
     reset,
-  } = useForm();
+  } = useForm({ mode: 'onBlur' });
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data));

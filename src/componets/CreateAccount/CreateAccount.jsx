@@ -10,34 +10,14 @@ const CreateAccount = () => {
     formState: { errors, isValid },
     handleSubmit,
     reset,
-  } = useForm();
+  } = useForm({ mode: 'onBlur' });
 
   const onSubmit = (data) => {
-    ////// принимает данные из формы , будет перед. набор данных из формы
     alert(JSON.stringify(data));
     reset();
   };
-  // const dispatch = useAppDispatch();
-  // const { push } = useNavigate();
-
-  // const handleLogin = (email, password) => {
-  //   const auth = getAuth();
-  //   signInWithEmailAndPassword(auth, email, password)
-  //     .then(({ user }) => {
-  //       console.log(user);
-  //       dispatch(
-  //         setUser({
-  //           email: user.email,
-  //           id: user.uid,
-  //           token: user.refreshToken,
-  //         })
-  //       );
-  //       push('/');
-  //     })
-  //     .catch(() => alert('Invalid user!'));
 
   return (
-    // <Form title="sign in" handleClick={handleLogin}>
     <div className="form">
       <form onSubmit={handleSubmit(onSubmit)}>
         <img
@@ -112,7 +92,6 @@ const CreateAccount = () => {
         </p>
       </form>
     </div>
-    // </Form>
   );
 };
 
